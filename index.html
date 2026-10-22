@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#0c1017">
+  <meta name="description" content="English word families, prefixes, suffixes, definitions and American English pronunciation">
+  <title>Word Formation — Reference</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app">
+    <header class="topbar">
+      <div class="brand"><span class="brand-symbol" aria-hidden="true">w<span>·</span></span><div><span class="brand-name">Word Formation</span><span class="brand-sub">REFERENCE</span></div></div>
+      <div class="header-tools">
+        <div class="lang-switch" role="group" aria-label="Definition language"><button type="button" class="lang active" data-lang="en" aria-pressed="true">EN</button><button type="button" class="lang" data-lang="pt" aria-pressed="false">PT</button></div>
+        <span class="header-separator" aria-hidden="true"></span>
+        <span class="header-note">AMERICAN ENGLISH</span>
+      </div>
+    </header>
+    <div class="workspace">
+      <aside class="sidepanel">
+        <div class="aside-heading">LIBRARY</div>
+        <div class="nav-group" role="group" aria-label="Search category">
+          <button type="button" class="nav-tab active" data-mode="family" aria-pressed="true"><span class="nav-icon" aria-hidden="true">◫</span><span>Word families</span><span class="tab-count" id="family-count">0</span></button>
+          <button type="button" class="nav-tab" data-mode="affix" aria-pressed="false"><span class="nav-icon" aria-hidden="true">≋</span><span>Prefixes & suffixes</span><span class="tab-count" id="affix-count">0</span></button>
+        </div>
+        <div class="side-divider"></div>
+        <div class="aside-heading">QUICK ACCESS</div>
+        <div id="quick-links" class="quick-links"></div>
+        <div class="side-spacer"></div>
+        <div class="side-footer"><span class="status-dot"></span> Curated reference <span class="side-footer-line">Version 1.0 · 2026</span></div>
+      </aside>
+      <main class="mainarea">
+        <div class="intro"><div><span class="eyebrow">ENGLISH · WORD FORMATION</span><h1>Words &amp; Affixes</h1></div><div class="intro-counter" id="intro-counter">—</div></div>
+        <div class="search-area"><label class="sr-only" for="word-search">Search words and affixes</label><svg class="search-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.5"></circle><path d="m16 16 5 5"></path></svg><input type="search" id="word-search" autocomplete="off" spellcheck="false" placeholder="Search a word, prefix or suffix" aria-label="Search a word, prefix or suffix"><kbd class="shortcut">Ctrl K</kbd></div>
+        <div class="content-grid">
+          <section class="result-column" aria-label="Search results"><div class="section-heading"><h2 id="results-title">Word families</h2><span id="results-count" class="result-count">—</span></div><div id="results" class="result-list"></div></section>
+          <section class="detail-column" id="detail" aria-live="polite" aria-label="Word details"></section>
+        </div>
+        <footer class="page-footer"><span>Curated examples · US pronunciation</span><span>Word Formation · Reference v1</span></footer>
+      </main>
+    </div>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="data.js"></script><script src="app.js"></script>
+</body>
+</html>
